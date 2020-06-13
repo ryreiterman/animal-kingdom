@@ -64,8 +64,8 @@ body {
   }
 
   .portfolio .featured-small {
-    grid-row: span 2;
-    grid-column: span 2;
+    grid-row: span 4;
+    grid-column: span 4;
   }
 }
 

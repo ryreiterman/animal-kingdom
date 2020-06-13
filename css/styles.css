@@ -1,0 +1,82 @@
+/* =====================================
+   Page Styles
+======================================== */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+}
+
+.page-heading {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 0.3em;
+  border-bottom: solid 2px;
+}
+
+.portfolio > figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.portfolio img {
+  flex: 1;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.portfolio figcaption {
+  padding: 0.3em 0.8em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: right;
+}
+
+@media (min-width: 900px) {
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .portfolio .featured {
+    grid-row: span 4;
+    grid-column: span 4;
+  }
+
+  .portfolio .featured-small {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1000px) {
+
+
+  .portfolio .featured {
+    grid-row: span 4;
+    grid-column: span 4;
+  }
+
+  .portfolio .featured-small {
+    grid-row: span 4;
+    grid-column: span 4;
+  }
+}

@@ -12,6 +12,18 @@
       <header>
         <h1 class="page-heading">Animal Kingdom Gallery</h1>
       </header>
+
+      <nav>
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+          <div class="menu-dropdown">
+            <li><a href="/animal-kingdom.html"></a>Animal Kingdom</li>
+            <li><a href="/brevard-zoo.html"></a>Brevard Zoo</li>
+            <li><a href="/central-fla-zoo.html"></a>Central Florida Zoo</li>
+            <li><a href="/columbus-zoo.html"></a>Columbus Zoo</li>
+            <li><a href="/lowry-park-zoo.html"></a>Lowry Park Zoo</li>
+          </div>
+      </nav>
+
         <div class="portfolio">
           <figure class="featured">
             <img src="images/tiger_headon_small.jpg" alt="Tiger">
@@ -58,5 +70,15 @@
 
    </div>
    <!-- End portfolio div -->
+   <script type="text/javascript">
+     (function () {
+       const button = document.getElementById('toggle-menu');
+       button.addEventListener('click', function(event) {
+         event.preventDefault();
+         const menu = document.getElementById('main-menu');
+         menu.classList.toggle('is-open');
+       });
+     }) ();
+   </script>
   </body>
 </html>

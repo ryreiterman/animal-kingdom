@@ -21,6 +21,14 @@ body {
 
 }
 
+.nav-background {
+  background-color: #333333;
+}
+
+a {
+  color: #fff;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: 1fr;

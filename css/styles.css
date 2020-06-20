@@ -25,6 +25,10 @@ body {
   background-color: #333333;
 }
 
+.hamburger {
+  fill: #fff;
+}
+
 a {
   color: #fff;
 }
